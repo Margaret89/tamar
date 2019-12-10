@@ -1,0 +1,83 @@
+/*-------------- fonts -----------------*/
+/* Heading Pro */
+@font-face {
+	font-family: 'Heading Pro';
+	src: url('#{$path-fonts}/Heading_Pro/HeadingPro-Italic.eot');
+	src: local('Heading Pro Italic'), local('HeadingPro-Italic'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-Italic.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-Italic.woff2') format('woff2'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-Italic.woff') format('woff'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Heading Pro';
+	src: url('#{$path-fonts}/Heading_Pro/HeadingPro-Bold.eot');
+	src: local('Heading Pro Bold'), local('HeadingPro-Bold'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-Bold.woff2') format('woff2'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-Bold.woff') format('woff'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Heading Pro';
+	src: url('#{$path-fonts}/Heading_Pro/HeadingPro-Regular.eot');
+	src: local('Heading Pro Regular'), local('HeadingPro-Regular'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-Regular.woff2') format('woff2'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-Regular.woff') format('woff'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Heading Pro';
+	src: url('#{$path-fonts}/Heading_Pro/HeadingPro-BoldItalic.eot');
+	src: local('Heading Pro Bold Italic'), local('HeadingPro-BoldItalic'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-BoldItalic.woff2') format('woff2'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-BoldItalic.woff') format('woff'),
+		url('#{$path-fonts}/Heading_Pro/HeadingPro-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+/* Circe */
+@font-face {
+	font-family: 'Circe';
+	src: url('#{$path-fonts}/Circe/Circe-Regular.eot');
+	src: local('Circe'), local('Circe-Regular'),
+		url('#{$path-fonts}/Circe/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/Circe/Circe-Regular.woff') format('woff'),
+		url('#{$path-fonts}/Circe/Circe-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('#{$path-fonts}/Circe/Circe-Bold.eot');
+	src: local('Circe Bold'), local('Circe-Bold'),
+		url('#{$path-fonts}/Circe/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/Circe/Circe-Bold.woff') format('woff'),
+		url('#{$path-fonts}/Circe/Circe-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('#{$path-fonts}/Circe/Circe-ExtraBold.eot');
+	src: local('Circe ExtraBold'), local('Circe-ExtraBold'),
+		url('#{$path-fonts}/Circe/Circe-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('#{$path-fonts}/Circe/Circe-ExtraBold.woff') format('woff'),
+		url('#{$path-fonts}/Circe/Circe-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
