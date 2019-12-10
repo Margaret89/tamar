@@ -1,0 +1,115 @@
+/*-------------- booking -----------------*/
+.booking{
+	max-width: 870px;
+	background: #fff;
+	padding: 44px 45px 24px;
+	font-family: $font-circe;
+}
+
+.booking-service{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 57px;
+
+	&__img{
+		width: 48px;
+	}
+
+	&__content{
+		width: calc(100% - 75px);
+	}
+
+	&__head{
+		@include font(normal, bold, 33px, 1, $color-text);
+	}
+
+	&__text{
+		@include font(normal, normal, 24.4px, 1, $color-text);
+	}
+}
+
+.book-form{
+	display: flex;
+	justify-content: space-between;
+
+	&__title{
+		font-family: $font-heading-pro;
+		@include font(normal, bold, 39px, 1.2, $color-red);
+		margin-bottom: 23px;
+		padding-top: 4px;
+	}
+
+	&__date{
+		width: 415px;
+		border-right: 2px solid $color-red;
+
+	}
+
+	&__date &__title{
+		margin-bottom: 3px;
+	}
+
+	&__info{
+		width: calc(100% - 475px);
+	}
+
+	&__month{
+		margin-bottom: 10px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea{
+		height: 50px;
+		width: 100%;
+		outline: none;
+		border: 2px solid #c4c4c4;
+		font-family: $font-circe;
+		@include font(normal, normal, 20px, 48px, #616161);
+		padding: 0 25px;
+		margin: 0;
+		margin-bottom: 18px;
+	}
+
+	textarea{
+		height: 120px;
+	}
+
+	.btn,
+	input[type="submit"].btn{
+		width: 100%;
+	}
+}
+
+.calendar{
+	display: flex;
+	flex-wrap: wrap;
+	width: 350px;
+}
+
+.input-date{
+	input[type=radio] {
+		display: none;
+	}
+
+	&__label{
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		padding: 0 5px;
+		@include font(normal, normal, 21px, 48px, #000);
+		text-align: center;
+		cursor: pointer;
+		border: 1px solid #c4c4c4;
+		background: #fff;
+		transition: all 0.3s ease;
+	}
+
+	input[type=radio]:checked + &__label,
+	&__label:hover{
+		background: $color-red;
+		border-color: $color-red;
+		color: #fff;
+	}
+}

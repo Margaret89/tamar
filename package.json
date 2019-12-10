@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/Margaret89/tamar.git"
   },
+  "browserslist": [
+    "last 3 version",
+    ">1%"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -25,5 +29,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-spritesmith": "0.0.2",
     "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "select2": "^4.0.12"
   }
 }

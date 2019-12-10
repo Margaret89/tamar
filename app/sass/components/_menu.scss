@@ -1,0 +1,50 @@
+/*-------------- menu -----------------*/
+.menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 40px 0;
+
+	&__item{
+		display: flex;
+		align-items: center;
+	}
+
+	&__icon{
+		width: 4rem;
+		padding-right: 0.8rem;
+	}
+
+	&__text{
+		width: 17rem;
+		max-width: calc(100% - 4rem);
+		font-family: $font-circe;
+		@include font(normal, bold, 1.2rem, 1.2, $color-text);
+	}
+
+	&__link{
+		font-family: $font-heading-pro;
+		@include font(normal, bold, 1.9rem, 1.2, $color-text);
+		text-decoration: none;
+		position: relative;
+	}
+
+	&__link::after{
+		content: '';
+		display: inline-block;
+		width: 100%;
+		height: 1px;
+		border-bottom: 1px dashed $color-red;
+		opacity: 1;
+		transition: all 0.3s linear;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+
+	&__link:hover::after{
+		opacity: 0;
+	}
+}

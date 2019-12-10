@@ -4,35 +4,264 @@
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Главная страница</title>
+		<title>Грузинская кухня</title>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="js/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
 		<div class="wrapper">
-			<header>
+			<header class="header">
 				<div class="container">
-					<p>Header</p>
+					<div class="header__content">
+						<div class="header__company">Грузинская кухня</div>
+						<div class="header__logo"><img src="img/logo.svg" alt="Logo"></div>
+						<div class="header__address">
+							Санкт-Петербург, ул. Караванная, 20,<br>
+							Тел: 8 (812) 679-11-19,<br>
+							Режим работы: 12:00 - 24:00, ежедневно
+						</div>
+					</div>
 				</div>
 			</header>
 			<main>
 				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<p>Основной текст</p>
+					<h1>В честь открытия ресторана ТАМАР - 50% скидка на хачапури*</h1>
+
+					<div class="content-page">
+						<div class="menu">
+							<div class="menu__item">
+								<div class="menu__icon"><img src="img/dish.svg" alt=""></div>
+								<div class="menu__text"><a href="docs/Основное меню.pdf" class="menu__link">Основное меню</a></div>
+							</div>
+
+							<div class="menu__item">
+								<div class="menu__icon"><img src="img/head.svg" alt=""></div>
+								<div class="menu__text"><a href="docs/Винная карта.pdf"  class="menu__link">Винная карта</a></div>
+							</div>
+
+							<div class="menu__item">
+								<div class="menu__icon"><img src="img/star.svg" alt=""></div>
+								<div class="menu__text">Специальные предложения корпоративы / банкеты</div>
+							</div>
+						</div>
+
+						<div class="booking">
+							<div class="booking-service">
+								<div class="booking-service__img"><img src="img/people.svg" alt=""></div>
+
+								<div class="booking-service__content">
+									<div class="booking-service__head">Забронировать стол</div>
+									<div class="booking-service__text">Новогодний корпоратив  от 1 500 руб. / на человека</div>
+								</div>
+							</div>
+
+							<form class="book-form">
+								<div class="book-form__date">
+									<div class="book-form__title">Укажите дату</div>
+
+									<div class="book-form__month">
+										<select class="js-select">
+											<option value="01">Январь</option>
+											<option value="02">Февраль</option>
+											<option value="03">Март</option>
+											<option value="04">Апрель</option>
+											<option value="05">Май</option>
+											<option value="06">Июнь</option>
+											<option value="07">Июль</option>
+											<option value="08">Август</option>
+											<option value="09">Сентябрь</option>
+											<option value="10">Октябрь</option>
+											<option value="11">Ноябрь</option>
+											<option value="12">Декабрь</option>
+										</select>
+									</div>
+
+									<div class="calendar">
+										<div class="input-date">
+											<input type="radio" id="date1" name="date">
+											<label for="date1" class="input-date__label">1</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date2" name="date">
+											<label for="date2" class="input-date__label">2</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date3" name="date">
+											<label for="date3" class="input-date__label">3</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date4" name="date">
+											<label for="date4" class="input-date__label">4</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date5" name="date">
+											<label for="date5" class="input-date__label">5</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date6" name="date">
+											<label for="date6" class="input-date__label">6</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date7" name="date">
+											<label for="date7" class="input-date__label">7</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date8" name="date">
+											<label for="date8" class="input-date__label">8</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date9" name="date">
+											<label for="date9" class="input-date__label">9</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date10" name="date">
+											<label for="date10" class="input-date__label">10</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date11" name="date">
+											<label for="date11" class="input-date__label">11</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date12" name="date">
+											<label for="date12" class="input-date__label">12</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date13" name="date">
+											<label for="date13" class="input-date__label">13</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date14" name="date">
+											<label for="date14" class="input-date__label">14</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date15" name="date">
+											<label for="date15" class="input-date__label">15</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date16" name="date">
+											<label for="date16" class="input-date__label">16</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date17" name="date">
+											<label for="date17" class="input-date__label">17</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date18" name="date">
+											<label for="date18" class="input-date__label">18</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date19" name="date">
+											<label for="date19" class="input-date__label">19</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date20" name="date">
+											<label for="date20" class="input-date__label">20</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date21" name="date">
+											<label for="date21" class="input-date__label">21</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date22" name="date">
+											<label for="date22" class="input-date__label">22</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date23" name="date">
+											<label for="date23" class="input-date__label">23</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date24" name="date">
+											<label for="date24" class="input-date__label">24</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date25" name="date">
+											<label for="date25" class="input-date__label">25</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date26" name="date">
+											<label for="date26" class="input-date__label">26</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date27" name="date">
+											<label for="date27" class="input-date__label">27</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date28" name="date">
+											<label for="date28" class="input-date__label">28</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date29" name="date">
+											<label for="date29" class="input-date__label">29</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date30" name="date">
+											<label for="date30" class="input-date__label">30</label>
+										</div>
+
+										<div class="input-date">
+											<input type="radio" id="date31" name="date">
+											<label for="date31" class="input-date__label">31</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="book-form__info">
+									<div class="book-form__title">Бронирование стола</div>
+
+									<input type="text" placeholder="ФИО">
+									<input type="text" placeholder="Телефон" class="js-phone">
+									<input type="text" placeholder="Время">
+
+									<input type="submit" value="Забронировать" class="btn">
+								</div>
+							</form>
 						</div>
 					</div>
 				</div>
 			</main>
 			<footer class="footer">
 				<div class="container">
-					<p>Footer</p>
+					<div class="footer__content">
+						*В том числе с собой. Акция действует до 31 декабря 2019 года. Адрес: Караванная ул, 20. Тел: 679-11-19
+					</div>
 				</div>
 			</footer>
 		</div>
 
 		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/vendor/inputmask/jquery.maskedinput.min.js"></script>
+		<script src="js/vendor/select2/select2.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

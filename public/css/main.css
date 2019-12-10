@@ -60,20 +60,23 @@
 /*-------------- base style -----------------*/
 html,
 body {
+  height: 100%;
   background: #e9d3b5;
   font-family: "Heading Pro", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 23px;
-  line-height: 1.4;
+  line-height: 1.2;
   color: #423936;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 img {
@@ -94,7 +97,7 @@ p {
   font-style: normal;
   font-weight: normal;
   font-size: 23px;
-  line-height: 1.4;
+  line-height: 1.2;
   color: #423936;
   padding: 5px 0;
 }
@@ -108,17 +111,18 @@ h1,
 .h1 {
   font-style: normal;
   font-weight: bold;
-  font-size: 1.9rem;
+  font-size: 2.9rem;
   line-height: 1;
   color: #9b3736;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.8rem;
+  margin-top: 0;
 }
 
 h2,
 .h2 {
   font-style: normal;
   font-weight: normal;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   line-height: 1;
   color: #423936;
   margin-bottom: 1.5rem;
@@ -135,15 +139,45 @@ h3,
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  background: url(../img/bg.jpg) no-repeat center top;
+  background-size: cover;
+  position: relative;
+}
+
+.wrapper::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 248, 228, 0.65);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 auto;
+          flex: 1 auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.3rem;
 }
 
 .container {
   width: 100%;
-  padding-left: 4.1rem;
-  padding-right: 4.1rem;
+  max-width: 1585px;
+  margin: 0 auto;
+  padding: 0 15px;
   position: relative;
 }
 
@@ -196,5 +230,404 @@ input[type="submit"].btn:hover {
   font-weight: 700 !important;
 }
 
+.content-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 /*-------------- Header -----------------*/
+.header {
+  padding-top: 45px;
+  position: relative;
+}
+
+.header::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: url(../img/ribbon-up.jpg) repeat-x 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1.3rem;
+}
+
+.header__company {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.9rem;
+  line-height: 1.2;
+  color: #423936;
+}
+
+.header__address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: #423936;
+}
+
+.header__logo {
+  width: 6.1rem;
+}
+
 /*-------------- Footer -----------------*/
+.footer {
+  padding-bottom: 45px;
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  color: #423936;
+  text-align: center;
+}
+
+.footer::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 45px;
+  background: url(../img/ribbon-down.jpg) repeat-x 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.footer__content {
+  padding-bottom: 1.1rem;
+}
+
+/*-------------- menu -----------------*/
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
+
+.menu__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__icon {
+  width: 4rem;
+  padding-right: 0.8rem;
+}
+
+.menu__text {
+  width: 17rem;
+  max-width: calc(100% - 4rem);
+  font-family: "Circe", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: #423936;
+}
+
+.menu__link {
+  font-family: "Heading Pro", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.9rem;
+  line-height: 1.2;
+  color: #423936;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu__link::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #9b3736;
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.menu__link:hover::after {
+  opacity: 0;
+}
+
+/*-------------- booking -----------------*/
+.booking {
+  max-width: 870px;
+  background: #fff;
+  padding: 44px 45px 24px;
+  font-family: "Circe", Arial, sans-serif;
+}
+
+.booking-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 57px;
+}
+
+.booking-service__img {
+  width: 48px;
+}
+
+.booking-service__content {
+  width: calc(100% - 75px);
+}
+
+.booking-service__head {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 1;
+  color: #423936;
+}
+
+.booking-service__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24.4px;
+  line-height: 1;
+  color: #423936;
+}
+
+.book-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.book-form__title {
+  font-family: "Heading Pro", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 39px;
+  line-height: 1.2;
+  color: #9b3736;
+  margin-bottom: 23px;
+  padding-top: 4px;
+}
+
+.book-form__date {
+  width: 415px;
+  border-right: 2px solid #9b3736;
+}
+
+.book-form__date .book-form__title {
+  margin-bottom: 3px;
+}
+
+.book-form__info {
+  width: calc(100% - 475px);
+}
+
+.book-form__month {
+  margin-bottom: 10px;
+}
+
+.book-form input[type="text"],
+.book-form input[type="email"],
+.book-form textarea {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  border: 2px solid #c4c4c4;
+  font-family: "Circe", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 48px;
+  color: #616161;
+  padding: 0 25px;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.book-form textarea {
+  height: 120px;
+}
+
+.book-form .btn,
+.book-form input[type="submit"].btn {
+  width: 100%;
+}
+
+.calendar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 350px;
+}
+
+.input-date input[type=radio] {
+  display: none;
+}
+
+.input-date__label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 0 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 48px;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #c4c4c4;
+  background: #fff;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+input[type=radio]:checked + .input-date__label, .input-date__label:hover {
+  background: #9b3736;
+  border-color: #9b3736;
+  color: #fff;
+}
+
+/*-------------- select -----------------*/
+.select2 {
+  font-family: "Circe", Arial, sans-serif;
+}
+
+.select2-container .select2-selection--single {
+  height: 40px;
+  border-radius: 0;
+  border: 0;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 38px;
+  color: #000;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Circe", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000;
+  padding: 0;
+  border-bottom: 1px solid #000;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 11px;
+  background: transparent;
+  position: relative;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background: transparent url(../img/arr-down.svg) no-repeat center;
+  background-size: contain;
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  margin: 0 0 0 5px;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-width: 0 7px 7px;
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fff;
+}
+
+.select2-dropdown {
+  width: 150px;
+  background: #fff;
+  border: 2px solid #c4c4c4;
+  border-radius: 0;
+  margin-top: -2px;
+  padding: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000;
+  text-align: center;
+}
+
+.select2-container--open .select2-dropdown--below {
+  border-top: 1px solid #c4c4c4;
+}
+
+.select2-container--default .select2-results__option {
+  padding: 0 5px;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true],
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background: #9b3736;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .select2-container--default .select2-selection--single .select2-selection__rendered,
+  .select2-dropdown {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,86 @@
+/*-------------- select -----------------*/
+.select2{
+	font-family: $font-circe;
+}
+
+.select2-container .select2-selection--single{
+	height: 40px;
+	border-radius: 0;
+	border: 0;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 38px;
+	color: #000;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+	display: inline-block;
+	vertical-align: middle;
+	font-family: $font-circe;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 26px;
+	color: #000;
+	padding: 0;
+	border-bottom: 1px solid #000;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+	display: inline-block;
+	vertical-align: middle;
+	width: 11px;
+	height: 11px;
+	background: transparent;
+	position: relative;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+	background: transparent url(#{$path-img}/arr-down.svg) no-repeat center;
+	background-size: contain;
+	border: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: none;
+	margin: 0 0 0 5px;
+}
+
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
+	border-width: 0 7px 7px;
+	border-color: rgba(0,0,0,0) rgba(0,0,0,0) #fff;
+}
+
+.select2-dropdown{
+	width: 150px;
+	background: #fff;
+	border: 2px solid #c4c4c4;
+	border-radius: 0;
+	margin-top: -2px;
+	padding: 0;
+	@include font(normal, bold, 16px, 28px, #000);
+	text-align: center;
+}
+
+.select2-container--open .select2-dropdown--below {
+	border-top:1px solid #c4c4c4;
+}
+
+.select2-container--default .select2-results__option{
+	padding: 0 5px;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true],
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+	background: $color-red;
+	color: #fff;
+}
+
+@media (max-width: 767px) {
+	.select2-container--default .select2-selection--single .select2-selection__rendered,
+	.select2-dropdown{
+		font-size: 14px;
+	}
+}

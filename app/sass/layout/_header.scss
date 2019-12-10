@@ -1,1 +1,37 @@
 /*-------------- Header -----------------*/
+.header{
+	padding-top: 45px;
+	position: relative;
+
+	&::before{
+		content: '';
+		display: block;
+		width: 100%;
+		height: 45px;
+		background: url(#{$path-img}/ribbon-up.jpg) repeat-x 0 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+
+	&__content{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 1.3rem;
+	}
+
+	&__company{
+		@include font(normal, bold, 1.9rem, 1.2, $color-text);
+	}
+
+	&__address{
+		@include font(normal, normal, 1rem, 1.2, $color-text);
+	}
+
+	&__logo{
+		width: 6.1rem;
+	}
+}
