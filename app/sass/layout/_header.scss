@@ -35,6 +35,10 @@
 	&__logo{
 		width: 6.1rem;
 	}
+
+	&__address-wrap &__company{
+		display: none;
+	}
 }
 
 @media (max-height: 880px) {
@@ -43,6 +47,62 @@
 
 		&::before{
 			height: 35px;
+		}
+
+		&__logo{
+			width: 5.1rem;
+		}
+	}
+}
+
+
+@media (max-width: 767px) {
+	.header{
+		&__content{
+			justify-content: flex-start;
+		}
+
+		&__company{
+			display: none;
+		}
+
+		&__address-wrap{
+			margin-left: 20px;
+		}
+
+		&__address-wrap &__company{
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		&__logo{
+			width: 5.1rem;
+		}
+	}
+}
+
+@media (max-width: 420px) {
+	.header{
+		&__address{
+			font-size: 0.9rem;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.header{
+		&__content{
+			display: block;
+			text-align: center;
+		}
+
+		&__address-wrap{
+			margin-right: 0;
+		}
+
+		&__logo{
+			width: 3.1rem;
+			margin: 0 auto;
 		}
 	}
 }

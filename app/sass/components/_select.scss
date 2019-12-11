@@ -78,9 +78,14 @@
 	color: #fff;
 }
 
+@media (max-height: 880px) {
+	.select2-container--default .select2-selection--single .select2-selection__rendered{
+		font-size: 20px;
+	}
+}
+
 @media (max-width: 767px) {
-	.select2-container--default .select2-selection--single .select2-selection__rendered,
-	.select2-dropdown{
-		font-size: 14px;
+	.select2-container--default .select2-selection--single .select2-selection__rendered{
+		font-size: 18px;
 	}
 }

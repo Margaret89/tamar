@@ -161,6 +161,52 @@
 		}
 	}
 
+	.booking{
+		padding: 1rem;
+	}
+
+	.book-form{
+		input[type="text"],
+		input[type="email"],
+		textarea{
+			height: 35px;
+			line-height: 33px;
+			font-size: 18px;
+		}
+
+		&__date{
+			width: 280px;
+		}
+
+		&__info{
+			width: calc(100% - 315px);
+		}
+	}
+
+	.booking-service{
+		margin-bottom: 1rem;
+	}
+
+	.calendar{
+		width: 245px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.booking{
+		width: 625px;
+		padding: 1rem;
+	}
+
+	.input-date{
+		&__label{
+			width: 35px;
+			height: 35px;
+			font-size: 16px;
+			line-height: 33px;
+		}
+	}
+
 	.book-form{
 		input[type="text"],
 		input[type="email"],
@@ -184,8 +230,57 @@
 	}
 }
 
-// @media (max-width: 1400px) {
-// 	.fancybox-active{
-// 		height: auto;
-// 	}
-// }
+@media (max-width: 991px) {
+	.booking{
+		width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.book-form{
+		display: block;
+
+		&__title{
+			font-size: 1.3rem;
+			padding-top: 0;
+		}
+
+		&__date,
+		&__info{
+			width: 100%;
+		}
+
+		&__date{
+			border-right: 0;
+			margin-bottom: 20px;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		textarea{
+			padding: 0 10px;
+		}
+	}
+
+	.booking-service{
+		&__head{
+			font-size: 1.2rem;
+		}
+
+		&__text{
+			font-size: 0.9rem;
+		}
+	}
+}
+
+@media (max-width: 420px) {
+	.booking-service{
+		&__img{
+			display: none;
+		}
+
+		&__content{
+			width: 100%;
+		}
+	}
+}
