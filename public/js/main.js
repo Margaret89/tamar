@@ -12,4 +12,25 @@ $(document).ready(function () {
 			},
 		});
 	}
+
+	// Вывод сообщения об успешной отправке в попапе
+	$('.js-valid-form').each(function(){
+		$(this).on('submit',function(e){
+			$.fancybox.close();
+			$.fancybox.open({
+				src  : '#msg-success',
+				type : 'inline',
+				opts : {
+					
+				}
+			});
+			$(this)[0].reset();
+			e.preventDefault();
+		});
+	});
+
+	// Закрыть окно по кнопке
+	$('.js-close-popup').on('click', function(){
+		$.fancybox.close();
+	});
 });

@@ -16,12 +16,12 @@
 						<div class="menu">
 							<div class="menu__item">
 								<div class="menu__icon"><img src="img/dish.svg" alt=""></div>
-								<div class="menu__text"><a href="docs/Основное меню.pdf" class="menu__link">Основное меню</a></div>
+								<div class="menu__text"><a href="docs/Основное меню.pdf" target="_blank" class="menu__link">Основное меню</a></div>
 							</div>
 
 							<div class="menu__item">
 								<div class="menu__icon"><img src="img/head.svg" alt=""></div>
-								<div class="menu__text"><a href="docs/Винная карта.pdf"  class="menu__link">Винная карта</a></div>
+								<div class="menu__text"><a href="docs/Винная карта.pdf" target="_blank" class="menu__link">Винная карта</a></div>
 							</div>
 
 							<div class="menu__item">
@@ -40,7 +40,7 @@
 								</div>
 							</div>
 
-							<form class="book-form">
+							<form class="book-form js-valid-form">
 								<div class="book-form__date">
 									<div class="book-form__title">Укажите дату</div>
 
@@ -223,8 +223,8 @@
 									<div class="book-form__title">Бронирование стола</div>
 
 									<input type="text" placeholder="ФИО">
-									<input type="text" placeholder="Телефон" class="js-phone">
-									<input type="text" placeholder="Время">
+									<input type="text" placeholder="Телефон*" required="required" class="js-phone">
+									<input type="text" placeholder="Время*" required="required">
 
 									<input type="submit" value="Забронировать" class="btn">
 								</div>

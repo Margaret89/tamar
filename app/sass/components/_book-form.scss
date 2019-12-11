@@ -1,8 +1,8 @@
 /*-------------- booking -----------------*/
 .booking{
-	max-width: 870px;
+	width: 870px;
 	background: #fff;
-	padding: 44px 45px 24px;
+	padding: 1.9rem 1.95rem 1rem;
 	font-family: $font-circe;
 }
 
@@ -10,22 +10,22 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 57px;
+	margin-bottom: 2.48rem;
 
 	&__img{
-		width: 48px;
+		width: 2rem;
 	}
 
 	&__content{
-		width: calc(100% - 75px);
+		width: calc(100% - 3.2rem);
 	}
 
 	&__head{
-		@include font(normal, bold, 33px, 1, $color-text);
+		@include font(normal, bold, 1.4rem, 1, $color-text);
 	}
 
 	&__text{
-		@include font(normal, normal, 24.4px, 1, $color-text);
+		@include font(normal, normal, 1rem, 1, $color-text);
 	}
 }
 
@@ -35,8 +35,8 @@
 
 	&__title{
 		font-family: $font-heading-pro;
-		@include font(normal, bold, 39px, 1.2, $color-red);
-		margin-bottom: 23px;
+		@include font(normal, bold, 1.7rem, 1.2, $color-red);
+		margin-bottom: 1rem;
 		padding-top: 4px;
 	}
 
@@ -55,7 +55,7 @@
 	}
 
 	&__month{
-		margin-bottom: 10px;
+		margin-bottom: 6px;
 	}
 
 	input[type="text"],
@@ -70,6 +70,7 @@
 		padding: 0 25px;
 		margin: 0;
 		margin-bottom: 18px;
+		box-shadow: none;
 	}
 
 	textarea{
@@ -113,3 +114,78 @@
 		color: #fff;
 	}
 }
+
+@media (max-height: 1080px) {
+	.booking{
+		width: 825px;
+	}
+
+	.booking-service{
+		margin-bottom: 2rem;
+	}
+
+	.input-date{
+		&__label{
+			width: 45px;
+			height: 45px;
+			font-size: 20px;
+			line-height: 43px;
+		}
+	}
+
+	.book-form{
+		input[type="text"],
+		input[type="email"],
+		textarea{
+			height: 45px;
+			line-height: 43px;
+		}
+
+		&__date{
+			width: 370px;
+		}
+
+		&__info{
+			width: calc(100% - 425px);
+		}
+	}
+}
+
+@media (max-height: 880px) {
+	.input-date{
+		&__label{
+			width: 35px;
+			height: 35px;
+			font-size: 16px;
+			line-height: 33px;
+		}
+	}
+
+	.book-form{
+		input[type="text"],
+		input[type="email"],
+		textarea{
+			height: 35px;
+			line-height: 33px;
+			font-size: 18px;
+		}
+
+		&__date{
+			width: 280px;
+		}
+
+		&__info{
+			width: calc(100% - 315px);
+		}
+	}
+
+	.calendar{
+		width: 245px;
+	}
+}
+
+// @media (max-width: 1400px) {
+// 	.fancybox-active{
+// 		height: auto;
+// 	}
+// }

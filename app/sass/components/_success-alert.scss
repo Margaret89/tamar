@@ -1,0 +1,30 @@
+/*-------------- success-alert -----------------*/
+.success-alert{
+	width: 100%;
+	background: #fff;
+	text-align: center;
+
+	&__logo img{
+		width: 92px;
+	}
+
+	&__logo{
+		margin-bottom: 38px;
+	}
+
+	&__head{
+		font-family: $font-circe;
+		@include font(normal, bold, 32px, 1.2, $color-text);
+		margin-bottom: 40px;
+	}
+
+	&__text{
+		font-family: $font-circe;
+		@include font(normal, normal, 24px, 1.1, $color-text);
+		margin-bottom: 53px;
+	}
+
+	.btn{
+		min-width: 290px;
+	}
+}

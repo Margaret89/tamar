@@ -80,6 +80,8 @@ h3,
 }
 
 main{
+	display: flex;
+	align-items: center;
 	flex: 1 auto;
 	padding-top: 1.5rem;
 	padding-bottom: 1.3rem;
@@ -130,6 +132,80 @@ input[type="submit"].btn:hover{
 	// flex-direction: column;
 	justify-content: space-between;
 }
+
+.fancybox-content{
+	width: 815px;
+	max-width: 90%;
+	padding: 40px 40px 50px;
+}
+
+.fancybox-slide--html .fancybox-close-small{
+	padding: 5px;
+}
+
+.fancybox-slide--html{
+	padding: 0;
+}
+
+.fancybox-active{
+	height: 100%;
+}
+
+@media (max-height: 1080px) {
+	html,
+	body{
+		font-size: 20px;
+	}
+
+	h1,
+	.h1{
+		margin-bottom: 2rem;
+	}
+}
+
+@media (max-height: 940px) {
+	html,
+	body{
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 1400px) {
+	h1,
+	.h1{
+		font-size: 2.5rem;
+	}
+}
+
+@media (max-width: 1300px) {
+	html,
+	body{
+		font-size: 18px;
+	}
+}
+
+@media (max-height: 880px) {
+	html,
+	body{
+		font-size: 16px;
+	}
+
+	.btn,
+	input[type="submit"].btn{
+		height: 35px;
+		font-size: 14px;
+		line-height: 33px;
+	}
+}
+
+@media (max-width: 767px) {
+	.fancybox-active{
+		height: auto;
+	}
+}
+
+
+
 
 // @media (max-height: 880px) {
 // 	html,

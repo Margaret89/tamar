@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="js/vendor/select2/select2.min.css">
+		<link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.min.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
@@ -33,12 +34,12 @@
 						<div class="menu">
 							<div class="menu__item">
 								<div class="menu__icon"><img src="img/dish.svg" alt=""></div>
-								<div class="menu__text"><a href="docs/Основное меню.pdf" class="menu__link">Основное меню</a></div>
+								<div class="menu__text"><a href="docs/Основное меню.pdf" target="_blank" class="menu__link">Основное меню</a></div>
 							</div>
 
 							<div class="menu__item">
 								<div class="menu__icon"><img src="img/head.svg" alt=""></div>
-								<div class="menu__text"><a href="docs/Винная карта.pdf"  class="menu__link">Винная карта</a></div>
+								<div class="menu__text"><a href="docs/Винная карта.pdf" target="_blank" class="menu__link">Винная карта</a></div>
 							</div>
 
 							<div class="menu__item">
@@ -57,7 +58,7 @@
 								</div>
 							</div>
 
-							<form class="book-form">
+							<form class="book-form js-valid-form">
 								<div class="book-form__date">
 									<div class="book-form__title">Укажите дату</div>
 
@@ -240,8 +241,8 @@
 									<div class="book-form__title">Бронирование стола</div>
 
 									<input type="text" placeholder="ФИО">
-									<input type="text" placeholder="Телефон" class="js-phone">
-									<input type="text" placeholder="Время">
+									<input type="text" placeholder="Телефон*" required="required" class="js-phone">
+									<input type="text" placeholder="Время*" required="required">
 
 									<input type="submit" value="Забронировать" class="btn">
 								</div>
@@ -257,11 +258,26 @@
 					</div>
 				</div>
 			</footer>
+			<!-- Сообщение об успешной отправке -->
+			<div style="display: none;" id="msg-success">
+				<div class="success-alert">
+					<div class="success-alert__logo">
+						<img src="img/logo.svg" alt="">
+					</div>
+			
+					<div class="success-alert__head">Спасибо!</div>
+			
+					<div class="success-alert__text">Ваша заявка отправлена!<br>Менеджер свяжется с вами в ближайшее время.!</div>
+			
+					<span class="btn js-close-popup">Хорошо</span>
+				</div>
+			</div>
 		</div>
 
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/vendor/inputmask/jquery.maskedinput.min.js"></script>
 		<script src="js/vendor/select2/select2.min.js"></script>
+		<script src="js/vendor/fancybox/jquery.fancybox.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
