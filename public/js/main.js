@@ -112,14 +112,6 @@ $(document).ready(function () {
 	$("#form").submit(function(e) {
 		e.preventDefault() //устанавливаем событие отправки для формы с id=form
 		var form_data = $(this).serialize(); //собераем все данные из формы
-		$.fancybox.open({
-					src  : '#msg-success',
-					type : 'inline',
-					opts : {
-						
-					}
-				});
-				$("#form")[0].reset();
 
 		$.ajax({
 		type: 'POST', //Метод отправки

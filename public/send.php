@@ -12,12 +12,12 @@ if((isset($_POST['time'])&&$_POST['time']!="")&&(isset($_POST['phone'])&&$_POST[
 					<body>
 						<p>ФИО: '.$_POST['name'].'</p>
 						<p>Телефон: '.$_POST['phone'].'</p>
-						<p>Дата: '.$_POST['date'].' '.$arrMonth[$_POST['month']+1].'</p>
-						<p>Время: '.$_POST['phone'].'</p>
+						<p>Дата: '.$_POST['date'].' '.$arrMonth[$_POST['month']-1].'</p>
+						<p>Время: '.$_POST['time'].'</p>
 					</body>
 				</html>'; //Текст нащего сообщения можно использовать HTML теги
 		$headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
 		$headers .= "From: Отправитель <from@example.com>\r\n"; //Наименование и почта отправителя
 		mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
-// }
+}
 ?>
