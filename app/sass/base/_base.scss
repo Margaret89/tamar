@@ -39,7 +39,8 @@ strong{
 
 h1,
 .h1{
-	@include font(normal, bold, 2.9rem, 1, $color-red);
+	@include font(normal, bold, 3.2rem, 1, $color-red);
+	text-align: center;
 	margin-bottom: 2.8rem;
 	margin-top: 0;
 }
@@ -154,7 +155,7 @@ input[type="submit"].btn:hover{
 @media (max-height: 1080px) {
 	html,
 	body{
-		font-size: 18.5px;
+		font-size: 20px;
 	}
 
 	h1,
@@ -163,10 +164,10 @@ input[type="submit"].btn:hover{
 	}
 }
 
-@media (max-height: 940px) {
-	html,
-	body{
-		font-size: 18px;
+@media (max-width: 1600px) {
+	h1,
+	.h1{
+		font-size: 2.8rem;
 	}
 }
 
@@ -184,10 +185,17 @@ input[type="submit"].btn:hover{
 	}
 }
 
+@media (max-height: 940px) {
+	html,
+	body{
+		font-size: 17.5px;
+	}
+}
+
 @media (max-height: 880px) {
 	html,
 	body{
-		font-size: 15px;
+		font-size: 18px;
 	}
 
 	.btn,
@@ -199,7 +207,7 @@ input[type="submit"].btn:hover{
 
 	h1,
 	.h1{
-		font-size: 2.3rem;
+		font-size: 2.9rem;
 	}
 }
 
@@ -238,92 +246,3 @@ input[type="submit"].btn:hover{
 		font-size: 1.8rem;
 	}
 }
-
-
-
-
-// @media (max-height: 880px) {
-// 	html,
-// 	body{
-// 		font-size: 24px;
-// 	}
-// }
-
-// @media (max-width: 1600px) {
-// 	html,
-// 	body{
-// 		font-size: 24px;
-// 	}
-// }
-
-// @media (max-width: 1279px) {
-// 	.container{
-// 		padding-left: 3rem;
-// 		padding-right: 3rem;
-// 	}
-// }
-
-// @media (max-width: 991px) {
-// 	html,
-// 	body{
-// 		font-size: 18px;
-// 	}
-
-// 	.container{
-// 		padding-left: 4.1rem;
-// 		padding-right: 4.1rem;
-// 	}
-
-// 	main{
-// 		height: calc(100vh - 4.2rem);
-// 		margin-top: 4.2rem;
-// 	}
-
-// 	.btn,
-// 	input[type="submit"].btn{
-// 		height: 3.5rem;
-// 		border-radius: 1.75rem;
-// 		font-size: 0.9rem;
-// 		line-height: 3.4rem;
-// 		min-width: 15rem;
-// 	}
-
-// 	h1,
-// 	.h1{
-// 		font-size: 1.7rem;
-// 	}
-// }
-
-// @media (max-width: 767px) {
-// 	html,
-// 	body{
-// 		font-size: 16px;
-// 	}
-
-// 	main{
-// 		height: auto;
-// 		margin-top: 3.8rem;
-// 	}
-
-// 	.container{
-// 		padding-left: 20px;
-// 		padding-right: 20px;
-// 	}
-
-// 	.btn,
-// 	input[type="submit"].btn{
-// 		height: 3rem;
-// 		border-radius: 1.5rem;
-// 		font-size: 0.9rem;
-// 		line-height: 2.9rem;
-// 		min-width: 13.5rem;
-// 	}
-
-// 	h1,
-// 	.h1{
-// 		font-size: 1.5rem;
-// 		margin-bottom: 3.2rem;
-// 	}
-
-// 	.fancybox-content{width: 90%;}
-// }

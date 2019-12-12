@@ -111,9 +111,10 @@ h1,
 .h1 {
   font-style: normal;
   font-weight: bold;
-  font-size: 2.9rem;
+  font-size: 3.2rem;
   line-height: 1;
   color: #9b3736;
+  text-align: center;
   margin-bottom: 2.8rem;
   margin-top: 0;
 }
@@ -266,7 +267,7 @@ input[type="submit"].btn:hover {
 @media (max-height: 1080px) {
   html,
   body {
-    font-size: 18.5px;
+    font-size: 20px;
   }
   h1,
   .h1 {
@@ -274,10 +275,10 @@ input[type="submit"].btn:hover {
   }
 }
 
-@media (max-height: 940px) {
-  html,
-  body {
-    font-size: 18px;
+@media (max-width: 1600px) {
+  h1,
+  .h1 {
+    font-size: 2.8rem;
   }
 }
 
@@ -295,10 +296,17 @@ input[type="submit"].btn:hover {
   }
 }
 
+@media (max-height: 940px) {
+  html,
+  body {
+    font-size: 17.5px;
+  }
+}
+
 @media (max-height: 880px) {
   html,
   body {
-    font-size: 15px;
+    font-size: 18px;
   }
   .btn,
   input[type="submit"].btn {
@@ -308,7 +316,7 @@ input[type="submit"].btn:hover {
   }
   h1,
   .h1 {
-    font-size: 2.3rem;
+    font-size: 2.9rem;
   }
 }
 
@@ -395,7 +403,7 @@ input[type="submit"].btn:hover {
 }
 
 .header__logo {
-  width: 6.1rem;
+  width: 6.8rem;
 }
 
 .header__address-wrap .header__company {
@@ -410,7 +418,7 @@ input[type="submit"].btn:hover {
     height: 35px;
   }
   .header__logo {
-    width: 5.1rem;
+    width: 6.1rem;
   }
 }
 
@@ -731,6 +739,7 @@ input[type="submit"].btn:hover {
   margin-bottom: 18px;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border-radius: 0;
 }
 
 .book-form textarea {
@@ -790,36 +799,11 @@ input[type="submit"].btn:hover {
 
 @media (max-height: 1080px) {
   .booking {
-    width: 825px;
+    width: 725px;
   }
   .booking-service {
     margin-bottom: 2rem;
   }
-  .calendar {
-    width: 315px;
-    height: 270px;
-  }
-  .calendar__item {
-    width: 45px;
-    height: 45px;
-    font-size: 20px;
-    line-height: 43px;
-  }
-  .book-form input[type="text"],
-  .book-form input[type="email"],
-  .book-form textarea {
-    height: 45px;
-    line-height: 43px;
-  }
-  .book-form__date {
-    width: 370px;
-  }
-  .book-form__info {
-    width: calc(100% - 425px);
-  }
-}
-
-@media (max-height: 880px) {
   .calendar {
     width: 245px;
     height: 210px;
@@ -828,8 +812,24 @@ input[type="submit"].btn:hover {
     width: 35px;
     height: 35px;
     font-size: 16px;
-    line-height: 33px;
+    line-height: 35px;
   }
+  .book-form input[type="text"],
+  .book-form input[type="email"],
+  .book-form textarea {
+    height: 35px;
+    line-height: 33px;
+    font-size: 18px;
+  }
+  .book-form__date {
+    width: 300px;
+  }
+  .book-form__info {
+    width: calc(100% - 355px);
+  }
+}
+
+@media (max-height: 880px) {
   .booking {
     padding: 1rem;
   }
@@ -849,9 +849,6 @@ input[type="submit"].btn:hover {
   .booking-service {
     margin-bottom: 1rem;
   }
-  .calendar {
-    width: 245px;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -868,13 +865,6 @@ input[type="submit"].btn:hover {
     height: 35px;
     font-size: 16px;
     line-height: 33px;
-  }
-  .book-form input[type="text"],
-  .book-form input[type="email"],
-  .book-form textarea {
-    height: 35px;
-    line-height: 33px;
-    font-size: 18px;
   }
   .book-form__date {
     width: 280px;

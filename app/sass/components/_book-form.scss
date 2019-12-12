@@ -71,6 +71,7 @@
 		margin: 0;
 		margin-bottom: 18px;
 		box-shadow: none;
+		border-radius: 0;
 	}
 
 	textarea{
@@ -123,61 +124,12 @@
 
 @media (max-height: 1080px) {
 	.booking{
-		width: 825px;
+		width: 725px;
 	}
 
 	.booking-service{
 		margin-bottom: 2rem;
 	}
-
-	.calendar{
-		width: 315px;
-		height: 270px;
-
-		&__item{
-			width: 45px;
-			height: 45px;
-			font-size: 20px;
-			line-height: 43px;
-		}
-	}
-
-	// .input-date{
-	// 	&__label{
-	// 		width: 45px;
-	// 		height: 45px;
-	// 		font-size: 20px;
-	// 		line-height: 43px;
-	// 	}
-	// }
-
-	.book-form{
-		input[type="text"],
-		input[type="email"],
-		textarea{
-			height: 45px;
-			line-height: 43px;
-		}
-
-		&__date{
-			width: 370px;
-		}
-
-		&__info{
-			width: calc(100% - 425px);
-		}
-	}
-}
-
-@media (max-height: 880px) {
-	// .input-date{
-	// 	&__label{
-	// 		width: 35px;
-	// 		height: 35px;
-	// 		font-size: 16px;
-	// 		line-height: 33px;
-	// 	}
-	// }
 
 	.calendar{
 		width: 245px;
@@ -187,10 +139,30 @@
 			width: 35px;
 			height: 35px;
 			font-size: 16px;
-			line-height: 33px;
+			line-height: 35px;
 		}
 	}
 
+	.book-form{
+		input[type="text"],
+		input[type="email"],
+		textarea{
+			height: 35px;
+			line-height: 33px;
+			font-size: 18px;
+		}
+
+		&__date{
+			width: 300px;
+		}
+
+		&__info{
+			width: calc(100% - 355px);
+		}
+	}
+}
+
+@media (max-height: 880px) {
 	.booking{
 		padding: 1rem;
 	}
@@ -216,10 +188,6 @@
 	.booking-service{
 		margin-bottom: 1rem;
 	}
-
-	.calendar{
-		width: 245px;
-	}
 }
 
 @media (max-width: 1200px) {
@@ -240,26 +208,8 @@
 		}
 	}
 
-	// .input-date{
-	// 	&__label{
-	// 		width: 35px;
-	// 		height: 35px;
-	// 		font-size: 16px;
-	// 		line-height: 33px;
-	// 	}
-	// }
-
-
 
 	.book-form{
-		input[type="text"],
-		input[type="email"],
-		textarea{
-			height: 35px;
-			line-height: 33px;
-			font-size: 18px;
-		}
-
 		&__date{
 			width: 280px;
 		}
