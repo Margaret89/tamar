@@ -28,3 +28,25 @@
 		min-width: 290px;
 	}
 }
+
+@media (max-width: 767px) {
+	.success-alert{
+		&__logo{
+			margin-bottom: 25px;
+		}
+
+		&__head{
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+
+		&__text{
+			font-size: 20px;
+			margin-bottom: 30px;
+		}
+
+		.btn{
+			min-width: 200px;
+		}
+	}
+}

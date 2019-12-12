@@ -84,17 +84,19 @@
 }
 
 .calendar{
-	display: flex;
-	flex-wrap: wrap;
 	width: 350px;
-}
+	height: 300px;
 
-.input-date{
-	input[type=radio] {
+	&__list{
 		display: none;
 	}
 
-	&__label{
+	&__list.active{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item{
 		display: inline-block;
 		width: 50px;
 		height: 50px;
@@ -107,11 +109,15 @@
 		transition: all 0.3s ease;
 	}
 
-	input[type=radio]:checked + &__label,
-	&__label:hover{
+	&__item:hover,
+	&__item.active{
 		background: $color-red;
 		border-color: $color-red;
 		color: #fff;
+	}
+
+	&__item_empty{
+		opacity: 0;
 	}
 }
 
@@ -124,14 +130,26 @@
 		margin-bottom: 2rem;
 	}
 
-	.input-date{
-		&__label{
+	.calendar{
+		width: 315px;
+		height: 270px;
+
+		&__item{
 			width: 45px;
 			height: 45px;
 			font-size: 20px;
 			line-height: 43px;
 		}
 	}
+
+	// .input-date{
+	// 	&__label{
+	// 		width: 45px;
+	// 		height: 45px;
+	// 		font-size: 20px;
+	// 		line-height: 43px;
+	// 	}
+	// }
 
 	.book-form{
 		input[type="text"],
@@ -152,8 +170,20 @@
 }
 
 @media (max-height: 880px) {
-	.input-date{
-		&__label{
+	// .input-date{
+	// 	&__label{
+	// 		width: 35px;
+	// 		height: 35px;
+	// 		font-size: 16px;
+	// 		line-height: 33px;
+	// 	}
+	// }
+
+	.calendar{
+		width: 245px;
+		height: 210px;
+
+		&__item{
 			width: 35px;
 			height: 35px;
 			font-size: 16px;
@@ -198,14 +228,28 @@
 		padding: 1rem;
 	}
 
-	.input-date{
-		&__label{
+	.calendar{
+		width: 245px;
+		height: 210px;
+
+		&__item{
 			width: 35px;
 			height: 35px;
 			font-size: 16px;
 			line-height: 33px;
 		}
 	}
+
+	// .input-date{
+	// 	&__label{
+	// 		width: 35px;
+	// 		height: 35px;
+	// 		font-size: 16px;
+	// 		line-height: 33px;
+	// 	}
+	// }
+
+
 
 	.book-form{
 		input[type="text"],
@@ -223,10 +267,6 @@
 		&__info{
 			width: calc(100% - 315px);
 		}
-	}
-
-	.calendar{
-		width: 245px;
 	}
 }
 

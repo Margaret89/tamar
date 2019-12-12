@@ -62,191 +62,38 @@
 								</div>
 							</div>
 
-							<form class="book-form js-valid-form">
+							<form id="form" method="POST" class="book-form js-valid-form">
 								<div class="book-form__date">
 									<div class="book-form__title">Укажите дату</div>
 
 									<div class="book-form__month">
-										<select class="js-select">
-											<option value="01">Январь</option>
-											<option value="02">Февраль</option>
-											<option value="03">Март</option>
-											<option value="04">Апрель</option>
-											<option value="05">Май</option>
-											<option value="06">Июнь</option>
-											<option value="07">Июль</option>
-											<option value="08">Август</option>
-											<option value="09">Сентябрь</option>
-											<option value="10">Октябрь</option>
-											<option value="11">Ноябрь</option>
-											<option value="12">Декабрь</option>
+										<select class="js-select" name="month">
+											<option value="1" data-month="0">Январь</option>
+											<option value="2" data-month="1">Февраль</option>
+											<option value="3" data-month="2">Март</option>
+											<option value="4" data-month="3">Апрель</option>
+											<option value="5" data-month="4">Май</option>
+											<option value="6" data-month="5">Июнь</option>
+											<option value="7" data-month="6">Июль</option>
+											<option value="8" data-month="7">Август</option>
+											<option value="9" data-month="8">Сентябрь</option>
+											<option value="10" data-month="9">Октябрь</option>
+											<option value="11" data-month="10">Ноябрь</option>
+											<option value="12" data-month="11">Декабрь</option>
 										</select>
 									</div>
 
-									<div class="calendar">
-										<div class="input-date">
-											<input type="radio" id="date1" name="date">
-											<label for="date1" class="input-date__label">1</label>
-										</div>
+									<div class="calendar js-calendar"></div>
 
-										<div class="input-date">
-											<input type="radio" id="date2" name="date">
-											<label for="date2" class="input-date__label">2</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date3" name="date">
-											<label for="date3" class="input-date__label">3</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date4" name="date">
-											<label for="date4" class="input-date__label">4</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date5" name="date">
-											<label for="date5" class="input-date__label">5</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date6" name="date">
-											<label for="date6" class="input-date__label">6</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date7" name="date">
-											<label for="date7" class="input-date__label">7</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date8" name="date">
-											<label for="date8" class="input-date__label">8</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date9" name="date">
-											<label for="date9" class="input-date__label">9</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date10" name="date">
-											<label for="date10" class="input-date__label">10</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date11" name="date">
-											<label for="date11" class="input-date__label">11</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date12" name="date">
-											<label for="date12" class="input-date__label">12</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date13" name="date">
-											<label for="date13" class="input-date__label">13</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date14" name="date">
-											<label for="date14" class="input-date__label">14</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date15" name="date">
-											<label for="date15" class="input-date__label">15</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date16" name="date">
-											<label for="date16" class="input-date__label">16</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date17" name="date">
-											<label for="date17" class="input-date__label">17</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date18" name="date">
-											<label for="date18" class="input-date__label">18</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date19" name="date">
-											<label for="date19" class="input-date__label">19</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date20" name="date">
-											<label for="date20" class="input-date__label">20</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date21" name="date">
-											<label for="date21" class="input-date__label">21</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date22" name="date">
-											<label for="date22" class="input-date__label">22</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date23" name="date">
-											<label for="date23" class="input-date__label">23</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date24" name="date">
-											<label for="date24" class="input-date__label">24</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date25" name="date">
-											<label for="date25" class="input-date__label">25</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date26" name="date">
-											<label for="date26" class="input-date__label">26</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date27" name="date">
-											<label for="date27" class="input-date__label">27</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date28" name="date">
-											<label for="date28" class="input-date__label">28</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date29" name="date">
-											<label for="date29" class="input-date__label">29</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date30" name="date">
-											<label for="date30" class="input-date__label">30</label>
-										</div>
-
-										<div class="input-date">
-											<input type="radio" id="date31" name="date">
-											<label for="date31" class="input-date__label">31</label>
-										</div>
-									</div>
+									<input type="hidden" name="date" value="1" class="js-input-date">
 								</div>
 
 								<div class="book-form__info">
 									<div class="book-form__title">Бронирование стола</div>
 
-									<input type="text" placeholder="ФИО">
-									<input type="text" placeholder="Телефон*" required="required" class="js-phone">
-									<input type="text" placeholder="Время*" required="required">
+									<input type="text" placeholder="ФИО" name="name">
+									<input type="text" placeholder="Телефон*" required="required" class="js-phone" name="phone">
+									<input type="text" placeholder="Время*" required="required" name="time">
 
 									<input type="submit" value="Забронировать" class="btn">
 								</div>

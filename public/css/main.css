@@ -266,7 +266,7 @@ input[type="submit"].btn:hover {
 @media (max-height: 1080px) {
   html,
   body {
-    font-size: 20px;
+    font-size: 18.5px;
   }
   h1,
   .h1 {
@@ -298,13 +298,13 @@ input[type="submit"].btn:hover {
 @media (max-height: 880px) {
   html,
   body {
-    font-size: 16px;
+    font-size: 15px;
   }
   .btn,
   input[type="submit"].btn {
     height: 35px;
     font-size: 14px;
-    line-height: 33px;
+    line-height: 35px;
   }
   h1,
   .h1 {
@@ -317,7 +317,7 @@ input[type="submit"].btn:hover {
   input[type="submit"].btn {
     height: 35px;
     font-size: 14px;
-    line-height: 33px;
+    line-height: 35px;
   }
   h1,
   .h1 {
@@ -743,19 +743,23 @@ input[type="submit"].btn:hover {
 }
 
 .calendar {
+  width: 350px;
+  height: 300px;
+}
+
+.calendar__list {
+  display: none;
+}
+
+.calendar__list.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 350px;
 }
 
-.input-date input[type=radio] {
-  display: none;
-}
-
-.input-date__label {
+.calendar__item {
   display: inline-block;
   width: 50px;
   height: 50px;
@@ -774,10 +778,14 @@ input[type="submit"].btn:hover {
   transition: all 0.3s ease;
 }
 
-input[type=radio]:checked + .input-date__label, .input-date__label:hover {
+.calendar__item:hover, .calendar__item.active {
   background: #9b3736;
   border-color: #9b3736;
   color: #fff;
+}
+
+.calendar__item_empty {
+  opacity: 0;
 }
 
 @media (max-height: 1080px) {
@@ -787,7 +795,11 @@ input[type=radio]:checked + .input-date__label, .input-date__label:hover {
   .booking-service {
     margin-bottom: 2rem;
   }
-  .input-date__label {
+  .calendar {
+    width: 315px;
+    height: 270px;
+  }
+  .calendar__item {
     width: 45px;
     height: 45px;
     font-size: 20px;
@@ -808,7 +820,11 @@ input[type=radio]:checked + .input-date__label, .input-date__label:hover {
 }
 
 @media (max-height: 880px) {
-  .input-date__label {
+  .calendar {
+    width: 245px;
+    height: 210px;
+  }
+  .calendar__item {
     width: 35px;
     height: 35px;
     font-size: 16px;
@@ -843,7 +859,11 @@ input[type=radio]:checked + .input-date__label, .input-date__label:hover {
     width: 625px;
     padding: 1rem;
   }
-  .input-date__label {
+  .calendar {
+    width: 245px;
+    height: 210px;
+  }
+  .calendar__item {
     width: 35px;
     height: 35px;
     font-size: 16px;
@@ -861,9 +881,6 @@ input[type=radio]:checked + .input-date__label, .input-date__label:hover {
   }
   .book-form__info {
     width: calc(100% - 315px);
-  }
-  .calendar {
-    width: 245px;
   }
 }
 
@@ -1045,4 +1062,21 @@ input[type=radio]:checked + .input-date__label, .input-date__label:hover {
 
 .success-alert .btn {
   min-width: 290px;
+}
+
+@media (max-width: 767px) {
+  .success-alert__logo {
+    margin-bottom: 25px;
+  }
+  .success-alert__head {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .success-alert__text {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .success-alert .btn {
+    min-width: 200px;
+  }
 }
