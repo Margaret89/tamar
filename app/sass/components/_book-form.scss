@@ -124,7 +124,7 @@
 
 @media (max-height: 1080px) {
 	.booking{
-		width: 725px;
+		width: 625px;
 		padding: 1rem 1.9rem;
 	}
 
@@ -154,11 +154,11 @@
 		}
 
 		&__date{
-			width: 300px;
+			width: 280px;
 		}
 
 		&__info{
-			width: calc(100% - 355px);
+			width: calc(100% - 315px);
 		}
 	}
 }
@@ -193,7 +193,7 @@
 
 @media (max-width: 1200px) {
 	.booking{
-		width: 625px;
+		width: 550px;
 		padding: 1rem;
 	}
 
